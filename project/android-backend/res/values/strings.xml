@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">NFC Scanner</string>
+    
+    <!-- Service Descriptions -->
+    <string name="servicedesc">NFC Scanner HCE Service for tag emulation</string>
+    <string name="aiddescription">NFC Scanner Application ID</string>
+    <string name="payment_aid_description">Payment card emulation</string>
+    
+    <!-- Main Screen -->
+    <string name="scanner_title">NFC Scanner</string>
+    <string name="scanner_subtitle">Hold an NFC tag near your device to scan</string>
+    <string name="start_scan">Start Scan</string>
+    <string name="stop_scan">Stop Scan</string>
+    <string name="scanning">Scanning...</string>
+    
+    <!-- History Screen -->
+    <string name="history_title">Scan History</string>
+    <string name="history_empty">No tags scanned yet</string>
+    <string name="search_tags">Search tags...</string>
+    <string name="delete_tag">Delete Tag</string>
+    <string name="delete_all_tags">Delete All Tags</string>
+    
+    <!-- Details Screen -->
+    <string name="tag_details">Tag Details</string>
+    <string name="tag_id">Tag ID</string>
+    <string name="tag_type">Type</string>
+    <string name="tag_uid">UID</string>
+    <string name="tag_size">Size</string>
+    <string name="tag_writable">Writable</string>
+    <string name="tag_technologies">Technologies</string>
+    <string name="ndef_records">NDEF Records</string>
+    <string name="emulate_tag">Emulate Tag</string>
+    <string name="write_tag">Write to Tag</string>
+    
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="auto_save">Auto-save tags</string>
+    <string name="vibration">Vibration feedback</string>
+    <string name="sound">Sound effects</string>
+    <string name="export_data">Export Data</string>
+    <string name="import_data">Import Data</string>
+    <string name="clear_data">Clear All Data</string>
+    
+    <!-- NFC Status -->
+    <string name="nfc_not_supported">NFC not supported on this device</string>
+    <string name="nfc_disabled">NFC is disabled. Please enable NFC in settings.</string>
+    <string name="nfc_ready">NFC Ready</string>
+    <string name="enable_nfc">Enable NFC</string>
+    
+    <!-- Emulation -->
+    <string name="emulation_started">Tag emulation started</string>
+    <string name="emulation_stopped">Tag emulation stopped</string>
+    <string name="emulation_failed">Emulation failed</string>
+    
+    <!-- Errors -->
+    <string name="error_scan_failed">Scan failed</string>
+    <string name="error_write_failed">Write failed</string>
+    <string name="error_delete_failed">Delete failed</string>
+    <string name="error_export_failed">Export failed</string>
+    <string name="error_import_failed">Import failed</string>
+    
+    <!-- Success Messages -->
+    <string name="tag_saved">Tag saved successfully</string>
+    <string name="tag_deleted">Tag deleted</string>
+    <string name="data_exported">Data exported successfully</string>
+    <string name="data_imported">Data imported successfully</string>
+    <string name="write_successful">Write successful</string>
+    
+    <!-- Dialogs -->
+    <string name="confirm_delete">Are you sure you want to delete this tag?</string>
+    <string name="confirm_delete_all">Are you sure you want to delete all tags?</string>
+    <string name="confirm_clear_data">This will delete all your data. Continue?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    
+    <!-- Privacy & Legal -->
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    
+    <!-- Privacy Policy Content -->
+    <string name="privacy_policy_content">
+        Your privacy is our priority:\n\n
+        • All NFC data is stored locally on your device\n
+        • No data is transmitted to external servers\n
+        • No personal information is collected\n
+        • You have full control over your data\n
+        • Export/import features work offline\n\n
+        This app does not require internet connectivity and works completely offline to protect your privacy.
+    </string>
+    
+    <!-- Terms of Service Content -->
+    <string name="terms_of_service_content">
+        By using NFC Scanner, you agree to:\n\n
+        • Use the app responsibly and legally\n
+        • Not use it for malicious purposes\n
+        • Respect others\' privacy when scanning tags\n
+        • Understand that NFC functionality depends on device capabilities\n
+        • Take responsibility for any data you write to NFC tags\n\n
+        The app is provided "as is" without warranties. Use at your own risk.
+    </string>
+    
+    <!-- About Content -->
+    <string name="about_content">
+        NFC Scanner v1.0.0\n\n
+        A comprehensive NFC tag scanner, manager, and emulator with advanced features.\n\n
+        Features:\n
+        • Scan and read NFC tags\n
+        • View detailed tag information\n
+        • Save scan history\n
+        • Emulate existing tags\n
+        • Write data to new tags\n
+        • Export/import data\n
+        • Advanced search and filtering\n\n
+        Built with Kotlin, Room, and modern Android architecture.
+    </string>
+</resources>
