@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.peerbits.nfccardread">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature
         android:name="android.hardware.nfc"
@@ -10,15 +11,20 @@
 
     <application
         android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat">
+        android:theme="@style/Theme.NFCCardReader"
+        tools:targetApi="31">
+        
         <activity
             android:name=".SplashActivity"
+            android:exported="true"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/Theme.NFCCardReader.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -28,26 +34,35 @@
                 <action android:name="android.nfc.action.TECH_DISCOVERED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+            
             <meta-data
                 android:name="android.nfc.action.TECH_DISCOVERED"
                 android:resource="@xml/nfc_tech_filter" />
         </activity>
 
-
         <activity
             android:name=".NfcHome"
+            android:exported="false"
             android:screenOrientation="portrait" />
+            
         <activity
             android:name=".NFCRead"
+            android:exported="false"
             android:screenOrientation="portrait" />
+            
         <activity
             android:name=".NFCWrite"
+            android:exported="false"
             android:screenOrientation="portrait" />
+            
         <activity
             android:name=".NFCCardReading"
+            android:exported="false"
             android:screenOrientation="portrait" />
+            
         <activity
             android:name=".NFCPayActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
     </application>
 
